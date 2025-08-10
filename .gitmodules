@@ -1,0 +1,10 @@
+[submodule "external/camel"]
+	path = external/camel
+	url = https://github.com/camel-ai/camel.git
+	branch = terminal_toolkit_docker
+[submodule "external/rllm"]
+	path = external/rllm
+	url = https://github.com/Michaelsqj/rllm.git
+[submodule "external/terminal-bench"]
+	path = external/terminal-bench
+	url = https://github.com/Michaelsqj/terminal-bench.git
