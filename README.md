@@ -10,8 +10,25 @@
 # Clone the repository
 git clone --recurse-submodules https://github.com/Michaelsqj/terminal_agent.git
 
+pip install uv
+# Install submodules and dependencies
+uv pip install -e external/camel
+uv pip install -e external/terminal-bench
+
+uv pip install -e external/rllm/verl
+
+# Before installing rllm, making sure rust compiler is available
+rustc --version
+# [Optional], install rust compiler
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+rustc --version
+
+# Install rllm
+uv pip install -e external/rllm
 ```
 
+🚧 **TODO:** Create an all-in-one installation method with `pyproject.toml` and `uv.lock`
 
 ### Make Changes for `<submodule>`
 
