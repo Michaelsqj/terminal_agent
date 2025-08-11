@@ -1,0 +1,39 @@
+{
+  "versions": {
+    "v4.0": {
+      "file": "terminal_agent_judge_prompt_v4.0.md",
+      "description": "Terminal Agent Performance Judge Instructions v4.0",
+      "date": "2025-01-25",
+      "changes": [
+        "Comprehensive scoring criteria with phase adherence",
+        "Overthinking detection penalties",
+        "Gaming detection mechanisms",
+        "Detailed action validation rules"
+      ]
+    },
+    "v4.1": {
+      "file": "terminal_agent_judge_prompt_v4.1.md",
+      "description": "Terminal Agent Performance Judge Instructions v4.1",
+      "date": "2025-01-25",
+      "changes": [
+        "Added penalty for writing full actions in thinking blocks",
+        "Clarified that planning is good but pre-writing implementations is not",
+        "Made overthinking penalties more explicit (10+ lines in think tags)",
+        "Clarified initial todos should include exploration tasks",
+        "Emphasized YAML-only output format for judges"
+      ]
+    },
+    "v4.2": {
+      "file": "terminal_agent_judge_prompt_v4.2.md",
+      "description": "Terminal Agent Performance Judge Instructions v4.2",
+      "date": "2025-01-25",
+      "changes": [
+        "Catering for claude code CLI changes",
+        "As CCode is going to think because think is written all over the system prompt, I removed the thoughts output requirement",
+        "Moved the output to the bottom of the sys_msg so the CCodeBackend can continue on from that naturally"
+      ]
+    }
+  },
+  "latest": "v4.2",
+  "default": "latest"
+}

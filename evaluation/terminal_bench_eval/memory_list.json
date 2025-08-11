@@ -1,0 +1,25 @@
+[
+    {'uuid': 'ca25b8bd-0116-4bef-b1f7-4aa0fa6cef28', 'message': {'__class__': 'BaseMessage', 'role_name': 'Assistant', 'role_type': <RoleType.ASSISTANT: 'assistant'>, 'meta_dict': None, 'content': 'You are a System Administrator helping with log management tasks. You have access to terminal tools that can help you execute shell commands and search files. ', 'video_bytes': None, 'image_list': None, 'image_detail': 'auto', 'video_detail': 'low', 'parsed': None
+        }, 'role_at_backend': <OpenAIBackendRole.SYSTEM: 'system'>, 'extra_info': {}, 'timestamp': 1754851800.066884, 'agent_id': '100216e6-eda2-4dd6-a0ec-210e4fb21844'
+    },
+    {'uuid': '536b4387-44e4-4fe2-8e84-105426064146', 'message': {'__class__': 'BaseMessage', 'role_name': 'User', 'role_type': <RoleType.USER: 'user'>, 'meta_dict': None, 'content': "Create a 'logs' directory in '/Users/qijia/Documents/code/terminal_agent/workspace' and list its contents", 'video_bytes': None, 'image_list': None, 'image_detail': 'auto', 'video_detail': 'low', 'parsed': None
+        }, 'role_at_backend': <OpenAIBackendRole.USER: 'user'>, 'extra_info': {}, 'timestamp': 1754851800.066931, 'agent_id': '100216e6-eda2-4dd6-a0ec-210e4fb21844'
+    },
+    {'uuid': '8520d554-10c0-4609-af7f-add5f9d5cf24', 'message': {'__class__': 'FunctionCallingMessage', 'role_name': 'Assistant', 'role_type': <RoleType.ASSISTANT: 'assistant'>, 'meta_dict': None, 'content': '', 'video_bytes': None, 'image_list': None, 'image_detail': 'auto', 'video_detail': 'auto', 'parsed': None, 'func_name': 'shell_exec', 'args': {'id': 'session1', 'command': 'mkdir -p /Users/qijia/Documents/code/terminal_agent/workspace/logs'
+            }, 'result': None, 'tool_call_id': 'call_HGt9Mpa9SSAUcVI8537S2cZj', 'mask_output': False
+        }, 'role_at_backend': <OpenAIBackendRole.ASSISTANT: 'assistant'>, 'extra_info': {}, 'timestamp': 1754851802.70451, 'agent_id': '100216e6-eda2-4dd6-a0ec-210e4fb21844'
+    },
+    {'uuid': 'a1a580cf-2aff-4bf6-8b35-0616285b4ff7', 'message': {'__class__': 'FunctionCallingMessage', 'role_name': 'Assistant', 'role_type': <RoleType.ASSISTANT: 'assistant'>, 'meta_dict': None, 'content': '', 'video_bytes': None, 'image_list': None, 'image_detail': 'auto', 'video_detail': 'auto', 'parsed': None, 'func_name': 'shell_exec', 'args': None, 'result': '', 'tool_call_id': 'call_HGt9Mpa9SSAUcVI8537S2cZj', 'mask_output': False
+        }, 'role_at_backend': <OpenAIBackendRole.FUNCTION: 'function'>, 'extra_info': {}, 'timestamp': 1754851802.704511, 'agent_id': '100216e6-eda2-4dd6-a0ec-210e4fb21844'
+    },
+    {'uuid': '989157c0-bf2a-4567-b334-840d50c4bb56', 'message': {'__class__': 'FunctionCallingMessage', 'role_name': 'Assistant', 'role_type': <RoleType.ASSISTANT: 'assistant'>, 'meta_dict': None, 'content': '', 'video_bytes': None, 'image_list': None, 'image_detail': 'auto', 'video_detail': 'auto', 'parsed': None, 'func_name': 'shell_exec', 'args': {'id': 'session1', 'command': 'ls -l /Users/qijia/Documents/code/terminal_agent/workspace/logs'
+            }, 'result': None, 'tool_call_id': 'call_0uTLmnt35rKcBvyid7j3vqzC', 'mask_output': False
+        }, 'role_at_backend': <OpenAIBackendRole.ASSISTANT: 'assistant'>, 'extra_info': {}, 'timestamp': 1754851802.71998, 'agent_id': '100216e6-eda2-4dd6-a0ec-210e4fb21844'
+    },
+    {'uuid': '6fdc9312-5f8a-45f5-b5bf-e45fdd86da7c', 'message': {'__class__': 'FunctionCallingMessage', 'role_name': 'Assistant', 'role_type': <RoleType.ASSISTANT: 'assistant'>, 'meta_dict': None, 'content': '', 'video_bytes': None, 'image_list': None, 'image_detail': 'auto', 'video_detail': 'auto', 'parsed': None, 'func_name': 'shell_exec', 'args': None, 'result': 'total 0\n', 'tool_call_id': 'call_0uTLmnt35rKcBvyid7j3vqzC', 'mask_output': False
+        }, 'role_at_backend': <OpenAIBackendRole.FUNCTION: 'function'>, 'extra_info': {}, 'timestamp': 1754851802.719981, 'agent_id': '100216e6-eda2-4dd6-a0ec-210e4fb21844'
+    },
+    {'uuid': 'b3d1bcbc-b0ce-49c8-aef3-2c7b565a0e88', 'message': {'__class__': 'BaseMessage', 'role_name': 'Assistant', 'role_type': <RoleType.ASSISTANT: 'assistant'>, 'meta_dict': {}, 'content': "The 'logs' directory has been created in '/Users/qijia/Documents/code/terminal_agent/workspace'. The directory is currently empty.", 'video_bytes': None, 'image_list': None, 'image_detail': 'auto', 'video_detail': 'auto', 'parsed': None
+        }, 'role_at_backend': <OpenAIBackendRole.ASSISTANT: 'assistant'>, 'extra_info': {}, 'timestamp': 1754851804.462152, 'agent_id': '100216e6-eda2-4dd6-a0ec-210e4fb21844'
+    }
+]
